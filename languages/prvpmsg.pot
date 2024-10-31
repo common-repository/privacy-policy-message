@@ -1,0 +1,116 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Privacy Policy Message\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-20 17:00+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.2.2; wp-5.1.1"
+
+#: class.privacypolicymessage-admin.php:144
+msgid "Bottom"
+msgstr ""
+
+#: class.privacypolicymessage-admin.php:107
+msgid "Button label"
+msgstr ""
+
+#: class.privacypolicymessage.php:37
+msgid "Close"
+msgstr ""
+
+#: class.privacypolicymessage-admin.php:35
+msgid "Content Section"
+msgstr ""
+
+#: class.privacypolicymessage-admin.php:118
+msgid "Cookie expire days"
+msgstr ""
+
+#. Description of the plugin
+msgid "Cookie message box for privacy policy"
+msgstr ""
+
+#: class.privacypolicymessage-admin.php:161
+msgid "Custom link"
+msgstr ""
+
+#: class.privacypolicymessage-admin.php:96
+msgid "Custom link URI"
+msgstr ""
+
+#. URI of the plugin
+msgid "http://demo.kamilnowak.com/privacy-policy-message/"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "http://kamilnowak.com/"
+msgstr ""
+
+#: class.privacypolicymessage-admin.php:182
+msgid "Insert text %link% in message text to view link."
+msgstr ""
+
+#. Author of the plugin
+msgid "Kamil Nowak"
+msgstr ""
+
+#: class.privacypolicymessage-admin.php:141
+msgid "Left"
+msgstr ""
+
+#: class.privacypolicymessage-admin.php:74
+msgid "Link label"
+msgstr ""
+
+#: class.privacypolicymessage-admin.php:85
+msgid "Link target"
+msgstr ""
+
+#: class.privacypolicymessage-admin.php:63
+msgid "Link type"
+msgstr ""
+
+#: class.privacypolicymessage-admin.php:41
+msgid "Message"
+msgstr ""
+
+#: class.privacypolicymessage-admin.php:52
+msgid "Message position"
+msgstr ""
+
+#: class.privacypolicymessage-admin.php:153
+msgid "Open in new window"
+msgstr ""
+
+#. Name of the plugin
+msgid "Privacy Policy Message"
+msgstr ""
+
+#: class.privacypolicymessage-admin.php:162
+msgid "Privacy policy page"
+msgstr ""
+
+#: class.privacypolicymessage-admin.php:142
+msgid "Right"
+msgstr ""
+
+#: class.privacypolicymessage-admin.php:152
+msgid "Same window"
+msgstr ""
+
+#: class.privacypolicymessage-admin.php:167
+msgid "Set Content Options"
+msgstr ""
+
+#: class.privacypolicymessage-admin.php:143
+msgid "Top"
+msgstr ""

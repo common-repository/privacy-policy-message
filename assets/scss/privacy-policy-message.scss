@@ -1,0 +1,168 @@
+@import "mixins.scss";
+@import "media-queries.scss";
+
+/**
+ * Colors 
+ */
+$dark_grey: #3B4045;
+$white: #fff;
+$black: #000;
+
+/**
+ * Variables 
+ */
+$gutter: 15px;
+$background: $dark_grey;
+$text_color: $white;
+$btn_accept_bg: darken($background, 20%);
+$btn_accept_color: $text_color;
+$btn_accept_hover_bg: $text_color;
+$btn_accept_hover_color: $dark_grey;
+
+.prvpmsg {
+    display: none;
+    position: fixed;
+    line-height: 150%;
+    font-size: smaller;
+    box-sizing: border-box;
+    z-index: 999;
+    @include box-shadow( 5px 5px 10px rgba(0, 0, 0, 0.5) );
+
+    &__style-default {
+        background: $background;
+        color: $text_color;
+        button {
+            color: $btn_accept_color;
+            background: $btn_accept_bg;
+            &:hover, &:focus {
+                color: $btn_accept_hover_color;
+                background: $btn_accept_hover_bg;
+            }
+        }
+        .prvpmsg {
+            &__message {
+                padding: $gutter;
+                text-align: center; 
+                a {
+                    color: $white;
+                }
+            }
+            &__btn-accept {
+                display: inline-block;
+                margin: $gutter/2;
+                padding: $gutter/2 $gutter;
+                color: $btn_accept_color;
+                background: $btn_accept_bg;
+                border: 1px solid $btn_accept_bg;
+                &:hover, &:focus {
+                    color: $btn_accept_hover_color;
+                    background: $btn_accept_hover_bg;
+                }
+            }
+            &__close-x {
+                &:after {
+                    color: $white;
+                    background-color: $black;
+                    border: 1px solid $black;
+                    height: 3*$gutter;
+                    width: 3*$gutter;
+                    display: flex;
+                    padding: 0 $gutter;
+                    cursor: pointer;
+                    align-items: center;
+                    @include transition(all 0.3s ease-out);
+                }
+                &:hover, &:focus {
+                    &:after {
+                        color: $black;
+                        background-color: $white;
+                    }
+                }
+            }
+        }
+        
+    }
+    
+    &__position {
+        &-top {
+            top: 0;
+            width: 100%;
+            .admin-bar & {
+                top: 32px;
+            }
+        }
+        &-bottom {
+            bottom: 0;
+            width: 100%;
+        }
+        &-top, &-bottom {
+            .prvpmsg {
+                &__message {
+                    max-width: $mq-tablet-landscape;
+                    display: block;
+                    margin: 0 auto;
+                    @include tablet-landscape-and-below {
+                        padding-right: 60px;
+                    }
+                }
+                &__close-x {
+                    float: right;
+                    top: 0;
+                    position: absolute;
+                    right: 0;
+                }
+            }
+        }
+        &-left, &-right {
+            bottom: 0;
+            max-width: 320px; 
+            margin: 2*$gutter;
+            padding: (10px+2*$gutter) 2*$gutter 0 2*$gutter;
+            .prvpmsg {
+                &__message {
+                    display: block;
+                    text-align: justify;
+                }
+                &__close-x {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                }
+                &__btn-accept {
+                    display: block;
+                    margin: $gutter auto 0 auto;
+                    text-align: center;
+                }
+            }
+        }
+        &-left {
+            left: 0;
+        }
+        &-right {
+            right: 0;
+        }
+    }
+    &__link {
+        
+    }
+    &__message {
+        a {
+            text-decoration: underline;
+        }
+    }
+    &__btn-accept {
+        cursor: pointer;
+        @include transition(all 0.3s ease-out);
+    }
+    &__close-x {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:after {
+            font: normal 1em/1 Arial, sans-serif;
+            display: inline-block;
+            content: "\2716";
+        }
+    }
+    
+}
